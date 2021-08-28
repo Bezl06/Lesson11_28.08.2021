@@ -6,17 +6,18 @@ namespace Lesson11
     {
         static void Main(string[] args)
         {
+            //Задача 2
             DocumentWorker docWorker;
             System.Console.WriteLine("Введите ключ продукта для использования версий pro или exp\n(Если ввода небудет или пользователь введет неправильный ключ то будет использоваться бесплатная верся)\nВвод:");
             string key = Console.ReadLine();
             if (key == "1133")
             {
-                System.Console.WriteLine("Вы используете верси Pro");
+                System.Console.WriteLine("Вы используете версию Pro");
                 docWorker = new ProDocumentWorker();
             }
             else if (key == "2266")
             {
-                System.Console.WriteLine("Вы используете верси Expert");
+                System.Console.WriteLine("Вы используете версию Expert");
                 docWorker = new ExpertDocumentWord();
             }
             else
